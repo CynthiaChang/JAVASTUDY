@@ -1,0 +1,16 @@
+package javastudy;
+public class testit{
+	public static void main(String[] args) throws ClassNotFoundException,InstantiationException{
+		//动态加载Person类 
+		//Class<?> 泛型 ? 通配符，Classs和Person一样是个类
+		//c=Person类 c.newInstance()是object类型,强制转换成Person类
+		Class<?> c = Class.forName("javastudy.Person");
+		Person zhang=(Person)c.newInstance();
+		
+		zhang.name = "Jack";
+		zhang.age = 30;
+		zhang.display();
+	}
+}
+
+	

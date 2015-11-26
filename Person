@@ -1,0 +1,10 @@
+package javastudy;
+
+public class Person{
+	String name;
+	int age;
+	void display(){
+		String s = String.format("姓名：%s,年龄：%d",name,age);
+		System.out.println(s);
+	}
+}
